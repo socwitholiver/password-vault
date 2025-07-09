@@ -1,0 +1,26 @@
+﻿# 🔐 Ignore encryption keys and sensitive data
+key.key
+master.key
+vault.txt
+activity.log
+
+# 📦 PyInstaller output folders and files
+/dist/
+/build/
+*.spec
+
+# 🧪 Python cache
+__pycache__/
+/*.pyc
+
+# 🗂️ OS-specific files
+.DS_Store
+Thumbs.db
+
+# 📁 Environment or IDE folders (optional)
+.env
+.vscode/
+.idea/
+auto_build.py
+*.spec
+
