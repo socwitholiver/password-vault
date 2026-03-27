@@ -2,7 +2,7 @@
 import tkinter as tk
 from cryptography.fernet import Fernet
 import ttkbootstrap as ttk
-from ttkbootstrap.constants import CENTER, EW, LEFT, NSEW, W, Y
+from ttkbootstrap.constants import CENTER, EW, LEFT, NS, NSEW, W
 from ttkbootstrap.dialogs import Messagebox
 
 
@@ -256,7 +256,7 @@ class PasswordVaultGUI:
         self.tree.bind("<Double-1>", self.copy_selected_password)
 
         scrollbar = ttk.Scrollbar(table_wrap, orient="vertical", command=self.tree.yview)
-        scrollbar.grid(row=0, column=1, sticky=Y)
+        scrollbar.grid(row=0, column=1, sticky=NS)
         self.tree.configure(yscrollcommand=scrollbar.set)
 
         detail_card = ttk.Frame(panel, style="PanelAlt.TFrame", padding=18)
