@@ -20,6 +20,10 @@ OJ Vault 2.0 is a premium desktop password vault built with Python, `ttkbootstra
 
 ## Quick Start
 
+### Launch locally with one click
+
+On Windows, you can double-click `launch-oj-vault.bat` to start the source version of the app from the project folder.
+
 ### Run from source
 
 ```bash
@@ -48,6 +52,10 @@ pyinstaller --clean --noconfirm vault_gui.spec
 ```
 
 The packaged app will be generated in `dist/`.
+
+Local helper launcher:
+
+- `launch-oj-vault.bat`
 
 ## Release Plan
 

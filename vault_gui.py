@@ -9,6 +9,7 @@ from ttkbootstrap.dialogs import Messagebox
 VAULT_FILE = "vault.txt"
 KEY_FILE = "key.key"
 APP_NAME = "OJ Vault 2.0"
+APP_VERSION = "v2.0.0"
 APP_SUBTITLE = "Offline credential security with local encryption"
 BRAND_LABEL = "Oliver Jackson Secure Systems"
 BG = "#08111f"
@@ -134,8 +135,15 @@ class PasswordVaultGUI:
         self.build_left_panel(content)
         self.build_right_panel(content)
 
-        ttk.Label(self.root, textvariable=self.status_var, style="Status.TLabel", anchor=W).grid(
-            row=2, column=0, sticky=EW, pady=(14, 0)
+        footer = ttk.Frame(self.root, style="App.TFrame")
+        footer.grid(row=2, column=0, sticky=EW, pady=(14, 0))
+        footer.columnconfigure(0, weight=1)
+
+        ttk.Label(footer, textvariable=self.status_var, style="Status.TLabel", anchor=W).grid(
+            row=0, column=0, sticky=EW
+        )
+        ttk.Label(footer, text=APP_VERSION, style="Status.TLabel", anchor=W).grid(
+            row=0, column=1, sticky=W, padx=(12, 0)
         )
 
     def build_brand_mark(self, parent):
