@@ -33,13 +33,13 @@ On first launch, the app creates `key.key` automatically if it does not already 
 
 For the GitHub release, attach the packaged executable asset and use this direct-download pattern in the release notes or README:
 
-`https://github.com/oliverjacksonvictor/password-vault-gui/releases/download/v2.0.0/OJ-Vault-2.0.exe`
+`https://github.com/socwitholiver/password-vault/releases/download/v2.0.0/OJ-Vault-2.0.exe`
 
 That link will download the app immediately when clicked once the `v2.0.0` release asset is published.
 
 Recommended README button/link:
 
-`[Download OJ Vault 2.0 for Windows](https://github.com/oliverjacksonvictor/password-vault-gui/releases/download/v2.0.0/OJ-Vault-2.0.exe)`
+`[Download OJ Vault 2.0 for Windows](https://github.com/socwitholiver/password-vault/releases/download/v2.0.0/OJ-Vault-2.0.exe)`
 
 ## Build the Executable
 
